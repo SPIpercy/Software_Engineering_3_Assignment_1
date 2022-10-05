@@ -1,24 +1,24 @@
-package org.example;
+package com.java;
+
+import org.joda.time.LocalDate;
+import org.joda.time.Years;
 
 import java.util.ArrayList;
 
 public class Lecturer {
 
-    private String name,DOB;
+    private String name;
+    private LocalDate DOB;
     private int age;
-    private double id;
+    private int id;
     private ArrayList<CourseProgramme> coursesTaught = new ArrayList<>();
 
-    public Lecturer() {
 
-    }
-
-    public Lecturer(String name, String DOB, int age, double id, ArrayList<CourseProgramme> coursesTaught) {
-        this.name = name;
-        this.DOB = DOB;
-        this.age = age;
-        this.id = id;
-        this.coursesTaught = coursesTaught;
+    public Lecturer(String name, LocalDate DOB, int id) {
+        setName(name);
+        setId(id);
+        setDOB(DOB);
+        setAge(DOB);
     }
 
     public String getName() {
@@ -30,15 +30,16 @@ public class Lecturer {
     }
 
     public String getUsername() {
-
-        return getName().replaceAll("\\s","")+getAge();
+        String username;
+        username = getName().replaceAll("\\s+","")+getAge();
+        return username.toLowerCase();
     }
 
-    public String getDOB() {
+    public LocalDate getDOB() {
         return DOB;
     }
 
-    public void setDOB(String DOB) {
+    public void setDOB(LocalDate DOB) {
         this.DOB = DOB;
     }
 
@@ -46,15 +47,16 @@ public class Lecturer {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAge(LocalDate DOB) {
+        LocalDate currentDate = LocalDate.now();
+        this.age = Years.yearsBetween(DOB, currentDate).getYears();
     }
 
-    public double getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(double id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -62,7 +64,13 @@ public class Lecturer {
         return coursesTaught;
     }
 
-    public void setCoursesTaught(ArrayList<CourseProgramme> coursesTaught) {
-        this.coursesTaught = coursesTaught;
+    public void setCoursesTaught(CourseProgramme coursesTaught) {
+
+        this.coursesTaught.add(coursesTaught);
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }

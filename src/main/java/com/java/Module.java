@@ -1,16 +1,23 @@
-package org.example;
+package com.java;
 
 import java.util.ArrayList;
 
 public class Module {
 
     private String moduleName;
-    private double ModuleId;
+    private int ModuleId;
     private ArrayList<Student> noOfStudents= new ArrayList<>();
     private ArrayList<CourseProgramme> associatedCourses= new ArrayList<>();
     private Lecturer lecturerResponsible;
 
-    public Module() {
+    @Override
+    public String toString() {
+        return moduleName;
+    }
+
+    public Module(String moduleName, int moduleId) {
+        setModuleName(moduleName);
+        setModuleId(moduleId);
     }
 
     public String getModuleName() {
@@ -21,11 +28,11 @@ public class Module {
         this.moduleName = moduleName;
     }
 
-    public double getModuleId() {
+    public int getModuleId() {
         return ModuleId;
     }
 
-    public void setModuleId(double moduleId) {
+    public void setModuleId(int moduleId) {
         ModuleId = moduleId;
     }
 
@@ -33,16 +40,16 @@ public class Module {
         return noOfStudents;
     }
 
-    public void setNoOfStudents(ArrayList<Student> noOfStudents) {
-        this.noOfStudents = noOfStudents;
+    public void setNoOfStudents(Student noOfStudents) {
+        this.noOfStudents.add(noOfStudents);
     }
 
     public ArrayList<CourseProgramme> getAssociatedCourses() {
         return associatedCourses;
     }
 
-    public void setAssociatedCourses(ArrayList<CourseProgramme> associatedCourses) {
-        this.associatedCourses = associatedCourses;
+    public void setAssociatedCourses(CourseProgramme noOfAssociatedCourses){
+        this.associatedCourses.add(noOfAssociatedCourses);
     }
 
     public Lecturer getLecturerResponsible() {

@@ -1,9 +1,10 @@
-package org.example;
+package com.java;
 
 import java.util.ArrayList;
 import org.joda.time.*;
 
 public class CourseProgramme {
+
 
     private String courseName;
     private int courseId;
@@ -13,7 +14,14 @@ public class CourseProgramme {
     private DateTime startDate = new DateTime(2022,9,5,9,0);
     private DateTime finishDate = new DateTime(2023,5,16,0,0);
 
-    public CourseProgramme() {
+    public CourseProgramme(String courseName, int id) {
+        setCourseId(id);
+        setCourseName(courseName);
+    }
+
+    @Override
+    public String toString() {
+        return courseName;
     }
 
     public String getCourseName() {
@@ -36,16 +44,17 @@ public class CourseProgramme {
         return moduleAvailable;
     }
 
-    public void setModuleAvailable(ArrayList<Module> moduleAvailable) {
-        this.moduleAvailable = moduleAvailable;
+    public void setModuleAvailable(Module moduleAvailable) {
+        this.moduleAvailable.add(moduleAvailable);
     }
 
     public ArrayList<Student> getStudentsEnrolled() {
         return studentsEnrolled;
     }
 
-    public void setStudentsEnrolled(ArrayList<Student> studentsEnrolled) {
-        this.studentsEnrolled = studentsEnrolled;
+    public void setStudentsEnrolled(Student studentsEnrolled) {
+
+        this.studentsEnrolled.add(studentsEnrolled);
     }
 
     public DateTime getStartDate() {

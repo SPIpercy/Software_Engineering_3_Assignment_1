@@ -1,50 +1,50 @@
-package org.example;
+package com.java;
+
+import org.joda.time.*;
 
 import java.util.ArrayList;
 
 public class Student {
 
-    private String name,DOB;
+    private String name;
+    private LocalDate DOB;
     private int age;
-    private double id;
+    private int id;
     private ArrayList<Module> modules= new ArrayList<>();
 
     private CourseProgramme course;
-    public Student(){
 
-    }
-
-    public Student(String name, String DOB, int age, double id, ArrayList<Module> modules, CourseProgramme course) {
-        this.name = name;
-        this.DOB = DOB;
-        this.age = age;
-        this.id = id;
-        this.modules = modules;
-        this.course = course;
+    public Student(String name, LocalDate DOB,int id) {
+       setId(id);
+       setName(name);
+       setDOB(DOB);
+       setAge(DOB);
     }
 
     public void setName(String name) {
         this.name = name;
     }
-
     public void setCourses(CourseProgramme course) {
         this.course = course;
     }
 
-    public void setDOB(String DOB) {
+    public void setDOB(LocalDate DOB) {
         this.DOB = DOB;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAge(LocalDate DOB) {
+        LocalDate currentDate = LocalDate.now();
+        this.age = Years.yearsBetween(DOB, currentDate).getYears();
     }
 
-    public void setId(double id) {
+    public void setId(int id) {
+
         this.id = id;
     }
 
-    public void setModules(ArrayList<Module> modules) {
-        this.modules = modules;
+    public void setModules(Module modules) {
+
+        this.modules.add(modules);
     }
 
     public String getName() {
@@ -56,11 +56,12 @@ public class Student {
     }
 
     public String getUsername() {
-
-        return getName().replaceAll("\\s","")+getAge();
+        String username;
+        username = getName().replaceAll("\\s+","")+getAge();
+        return username.toLowerCase();
     }
 
-    public String getDOB() {
+    public LocalDate getDOB() {
         return DOB;
     }
 
@@ -68,8 +69,13 @@ public class Student {
         return age;
     }
 
-    public double getId() {
+    public int getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 
     public ArrayList<Module> getModules() {
