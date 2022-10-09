@@ -11,7 +11,7 @@ public class Lecturer {
     private LocalDate DOB;
     private int age;
     private int id;
-    private ArrayList<CourseProgramme> coursesTaught = new ArrayList<>();
+    private ArrayList<Module> moduleTaught = new ArrayList<>();
 
 
     public Lecturer(String name, LocalDate DOB, int id) {
@@ -60,13 +60,13 @@ public class Lecturer {
         this.id = id;
     }
 
-    public ArrayList<CourseProgramme> getCoursesTaught() {
-        return coursesTaught;
+    public ArrayList<Module> getCoursesTaught() {
+        return moduleTaught;
     }
 
-    public void setCoursesTaught(CourseProgramme coursesTaught) {
+    public void setCoursesTaught(Module moduleTaught) {
 
-        this.coursesTaught.add(coursesTaught);
+        this.moduleTaught.add(moduleTaught);
     }
 
     @Override
