@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class LecturerTest {
 
     private Lecturer lecturer1 = new Lecturer("Daniel Radcliff", new LocalDate(1985,7,12),1);
-    private Student lecturer2 = new Student("Michael Bacon", new LocalDate(1843,12,3),2);
+    private Lecturer lecturer2 = new Lecturer("Michael Bacon", new LocalDate(1843,12,3),2);
 
     @Test
     void getDOB() {
