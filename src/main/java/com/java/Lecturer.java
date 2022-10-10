@@ -64,7 +64,7 @@ public class Lecturer {
         return moduleTaught;
     }
 
-    public void setCoursesTaught(Module moduleTaught) {
+    public void setModuleTaught(Module moduleTaught) {
 
         this.moduleTaught.add(moduleTaught);
     }

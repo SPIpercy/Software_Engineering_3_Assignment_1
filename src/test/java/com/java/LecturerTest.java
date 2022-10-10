@@ -17,10 +17,10 @@ class LecturerTest {
 
     @Test
     void getCoursesTaught() {
-        CourseProgramme course1 = new CourseProgramme("Discrete Maths", 1);
-        CourseProgramme course2 = new CourseProgramme("Information Retrieval", 2);
-        lecturer1.setCoursesTaught(course1);
-        lecturer1.setCoursesTaught(course2);
+        Module module1 = new Module("Discrete Maths", 1);
+        Module module2 = new Module("Information Retrieval", 2);
+        lecturer1.setModuleTaught(module1);
+        lecturer1.setModuleTaught(module2);
 
         assertEquals("[Discrete Maths, Information Retrieval]" , lecturer1.getCoursesTaught().toString());
     }

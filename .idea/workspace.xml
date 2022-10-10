@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="625e7c0e-6deb-4487-ad76-ea82baa14171" name="Changes" comment="changed build.gradle file again">
+    <list default="true" id="625e7c0e-6deb-4487-ad76-ea82baa14171" name="Changes" comment="Updated Lecturer class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/java/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/Lecturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/java/LecturerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/java/LecturerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664971824215</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated Lecturer class">
+      <created>1665334417635</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665334417635</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,19 +264,22 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -277,6 +289,7 @@
     <MESSAGE value="Software Engineering 3 gitHub commit" />
     <MESSAGE value="changed build.gradle file" />
     <MESSAGE value="changed build.gradle file again" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed build.gradle file again" />
+    <MESSAGE value="Updated Lecturer class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Lecturer class" />
   </component>
 </project>
