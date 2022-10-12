@@ -26,9 +26,6 @@ class LecturerTest {
     }
     @Test
     void getId() {
-
-        System.out.println(lecturer1.getId());
-        System.out.println(lecturer2.getId());
         assertEquals(1, lecturer1.getId());
         assertEquals(2, lecturer2.getId());
     }
