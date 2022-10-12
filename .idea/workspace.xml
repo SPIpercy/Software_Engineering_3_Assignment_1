@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="625e7c0e-6deb-4487-ad76-ea82baa14171" name="Changes" comment="Updated Lecturer class" />
+    <list default="true" id="625e7c0e-6deb-4487-ad76-ea82baa14171" name="Changes" comment="Updated Lecturer class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +95,7 @@
       <recent name="com.java" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Assignment1 [build]">
+  <component name="RunManager" selected="Gradle.Assignment1 [clean]">
     <configuration name="Assignment1 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -206,9 +209,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Assignment1 [clean]" />
         <item itemvalue="Gradle.Assignment1 [build]" />
         <item itemvalue="Gradle.Tests in 'com.java'" />
-        <item itemvalue="Gradle.Assignment1 [clean]" />
         <item itemvalue="Gradle.ModuleTest.getModuleId" />
         <item itemvalue="Gradle.CourseProgrammeTest" />
       </list>
@@ -258,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665416447929</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated Lecturer class">
+      <created>1665417364316</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665417364316</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
